@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "963284144962",
+    "firebase_url": "https://mobile-work-03-default-rtdb.firebaseio.com",
+    "project_id": "mobile-work-03",
+    "storage_bucket": "mobile-work-03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963284144962:android:b06b7826b7ab311111eedb",
+        "android_client_info": {
+          "package_name": "com.example.trabalho_03"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963284144962-7i14e73d47m5m3lmghpinr6bt79ka7d5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trabalho_03",
+            "certificate_hash": "b7343684523c157c52db635cfdf6c8f7ff965721"
+          }
+        },
+        {
+          "client_id": "963284144962-15587p7jckm4o8dnq4gttku0vbvmtq0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3L6cwIk4ca4NMAClCQqXSNfFbeThhNBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963284144962-15587p7jckm4o8dnq4gttku0vbvmtq0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

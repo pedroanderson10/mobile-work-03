@@ -1,6 +1,6 @@
 # Mobile - Trabalho 03
 
-Aplicação que utiliza todos vários itens mobile.
+CRUD Android e Firebase
 
 Aluno : Pedro Anderson Costa Martins
 

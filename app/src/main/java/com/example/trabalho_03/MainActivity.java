@@ -110,7 +110,30 @@ public class MainActivity extends AppCompatActivity {
     //Deletar Tarefa
     public void clicarDeletarTarefa(View v){
         EditText textDel =  (EditText) findViewById(R.id.textDelete);
+
+        String aux = textDel.getText().toString();
+        boolean teste = false;
+
+        //Warning 1
+        if(aux == null || aux.isEmpty() || teste == false){
+            Toast.makeText(this, "Insira uma chave válida", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Receber chave do usuário e transformar em inteiro
         int chaveDel = Integer.parseInt(textDel.getText().toString());
+
+        //Conferir se chave existe
+        for (Tarefa tarefa: listaTarefas ){
+            if(chaveDel == tarefa.getChave()) {
+                teste = true;
+            }
+        }
+        //Warning 2
+        if(aux == null || aux.isEmpty() || teste == false){
+            Toast.makeText(this, "Insira uma chave válida", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         Tarefa tarefaDel = listaTarefas.get(chaveDel);
 

@@ -160,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
             fbReference.child("Tarefa").child(String.valueOf(tarefa.getChave())).setValue(tarefa);
 
             listaTarefas.add(tarefa);
+
+            Toast.makeText(this, "Tarefa adicionada", Toast.LENGTH_LONG).show();
             adapter.notifyDataSetChanged();
 
         }else if(requestCode==REQUEST_EDIT && resultCode == AdicionarTarefa.RESULT_ADD){
@@ -182,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
+            Toast.makeText(this, "Tarefa editada", Toast.LENGTH_LONG).show();
             adapter.notifyDataSetChanged();
 
 

@@ -111,16 +111,17 @@ public class MainActivity extends AppCompatActivity {
     public void clicarDeletarTarefa(View v){
         EditText textDel =  (EditText) findViewById(R.id.textDelete);
 
+        //Teste Warning 1
         String aux = textDel.getText().toString();
         boolean teste = false;
 
         //Warning 1
-        if(aux == null || aux.isEmpty() || teste == false){
+        if(aux == null || aux.isEmpty()){
             Toast.makeText(this, "Insira uma chave válida", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Receber chave do usuário e transformar em inteiro
+        // Transformar chave recebida em inteiro
         int chaveDel = Integer.parseInt(textDel.getText().toString());
 
         //Conferir se chave existe
@@ -156,9 +157,32 @@ public class MainActivity extends AppCompatActivity {
     public void clicarEditarTarefa(View v){
         Intent intent = new Intent(this, AdicionarTarefa.class);
 
-
         chave =  (EditText) findViewById(R.id.textEdit);
+
+        //Teste Warning 1
+        String aux = chave.getText().toString();
+        boolean teste = false;
+
+        //Warning 1
+        if(aux == null || aux.isEmpty()){
+            Toast.makeText(this, "Insira uma chave válida", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Transformar chave recebida em inteiro
         valorChave = Integer.parseInt(chave.getText().toString());
+
+        //Conferir se chave existe
+        for (Tarefa tarefa: listaTarefas ){
+            if(valorChave == tarefa.getChave()) {
+                teste = true;
+            }
+        }
+        //Warning 2
+        if(aux == null || aux.isEmpty() || teste == false){
+            Toast.makeText(this, "Insira uma chave válida", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         Tarefa tarefa = listaTarefas.get(valorChave);
 
